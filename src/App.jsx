@@ -3,7 +3,7 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useState, useEffect } from "react";
 
 export default function App() {
-    const { scene } = useGLTF("../public/woman.glb"); // Memuat file GLB
+    const { scene } = useGLTF("/woman.glb"); // Memuat file GLB
     const [rotation, setRotation] = useState([0, 0, 0]);
 
     useEffect(() => {
